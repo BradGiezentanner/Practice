@@ -1,0 +1,16 @@
+When burning .FFU images use DISM from the command line.
+example:
+dism /apply-ffu /ImageFile:X:\*****.ffu /ApplyDrive:\\.\PhysicalDrive(*)
+
+Make sure to use diskpart to clean drive being written to. Also use to indetify physical disk number and well as "list volume " to insure grabbing souce image from proper drive.
+
+When checking for OS/OE keys use command line and type "slmgr.vbs /dlv"
+
+when checking for device errors in linux open terminal window and type sudo dmesg -l err
+
+getting linux version, execute 'cat/proc/version'
+
+for Lubuntu version execute 'lsb_release -a'
+
+Also on Windows or Linux verifyChecksums are correct for all versions as this is not include in the checklist currently. Checksums can be obtained in sharepoint OS folder. 
+Verify using "CRC SHA 256"
